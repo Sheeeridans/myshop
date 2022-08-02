@@ -2,7 +2,7 @@
 <@t.template user>
     <h1 style="text-align: center">Мои товары</h1>
     <hr>
-    <a class="btn btn-dark mt-3 mb-3" style="text-align: center; width: 100%"
+    <a class="btn btn-info mt-3 mb-3" style="text-align: center; width: 100%"
        data-toggle="collapse" href="#collapseExample" role="button"
        aria-expanded="true" aria-controls="collapseExample">
         Добавить новый товар
@@ -58,13 +58,13 @@
             </div>
             <input type="hidden" name="_csrf" value="${_csrf.token}"/>
 
-            <button type="submit" style="width: 100%" class="btn btn-dark">Добавить</button>
+            <button type="submit" style="width: 100%" class="btn btn-info">Добавить</button>
         </form>
     </div>
     <div class="card-columns">
         <#list products as product>
             <a href="/product/${product.id}" class="product-link">
-                <div class="card text-white bg-dark my-3 product">
+                <div class="card text-dark bg-light my-3 product">
                     <div class="card-top">
                         <form action="/product/delete/${product.id}" method="post">
                             <input type="hidden" name="_csrf" value="${_csrf.token}"/>

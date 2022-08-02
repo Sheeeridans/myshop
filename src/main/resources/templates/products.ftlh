@@ -17,14 +17,14 @@
                 <input type="text" name="searchWord" <#if searchWord??>value="${searchWord}"</#if> class="form-control"
                        id="searchWord">
             </div>
-            <button style="width: 100%" type="submit" class="btn btn-dark">Поиск</button>
+            <button style="width: 100%" type="submit" class="btn btn-info">Поиск</button>
         </div>
     </form>
     <hr>
     <div class="card-columns">
         <#list products as product>
             <a href="/product/${product.id}" class="product-link">
-                <div class="card text-white bg-dark my-3 product">
+                <div class="card text-dark bg-light my-3 product">
 
                     <img src="/images/${product.previewImageId}"
                          class="card-img-top">

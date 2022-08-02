@@ -18,8 +18,8 @@
             </div>
         </div>
         <input type="hidden" name="_csrf" value="${_csrf.token}">
-        <button type="submit" style="width: 100%" class="btn btn-dark">Войти</button>
+        <button type="submit" style="width: 100%" class="btn btn-success">Войти</button>
     </form>
     <hr>
-    <h2><a href="/registration">Регистрация</a></h2>
+    <h2><a href="/registration" class="text-danger">Регистрация</a></h2>
 </@t.template>

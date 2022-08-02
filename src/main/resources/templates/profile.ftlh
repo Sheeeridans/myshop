@@ -16,12 +16,12 @@
         <br>
         <br>
         <#if user.isAdmin()>
-            <a class="btn btn-dark mb-3" style="text-align: center; width: 100%"
+            <a class="btn btn-info mb-3" style="text-align: center; width: 100%"
                href="/admin">
                 Панель администратора
             </a><br>
         </#if>
-        <a class="btn btn-dark mb-3" style="text-align: center; width: 100%"
+        <a class="btn btn-info mb-3" style="text-align: center; width: 100%"
            href="/my/products">
             Мои товары
         </a>
